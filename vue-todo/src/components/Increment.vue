@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import { incrementCounter, decrementCounter } from '../vuex/actions'
-
 export default {
   vuex: {
     actions: {
-      increment: incrementCounter,
-      decrement: decrementCounter
+      increment: ({ dispatch, state }) => dispatch('INCREMENT', 1),
+      decrement: ({ dispatch, state }) => dispatch('DECREMENT', 1)
     }
   }
 }

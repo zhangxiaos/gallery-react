@@ -6,6 +6,8 @@ Vue.use(Vuex)
 const state = {
 	count: 0,
 	totalPrice: 0,
+	sortPara: '',
+	order: 1,
 	book: {},
 	books: [
 		{ id: 1, author: '曹雪芹', name: '红楼梦', price: 32.0 }, 
@@ -29,6 +31,10 @@ const mutations = {
 	},
 	DELETEBOOK (state, book) {
 		state.books.$remove(book);
+	},
+	SORTBY (state, sortPara) {
+		state.sortPara = sortPara;
+		state.order *= -1;
 	}
 }
 
