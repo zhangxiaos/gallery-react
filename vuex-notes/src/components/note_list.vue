@@ -3,12 +3,24 @@
 		<div class="list-header">
 			<h2>NOTES|COLIGO</h2>
 			<div class="btns">
-				<button @click="show = 'all'" :class="{'active-btn': show == 'all'}">All Notes</button>
-				<button @click="show = 'favorite'" :class="{'active-btn': show == 'favorite'}">Favorites</button>
+				<!-- show all notes -->
+				<button 
+					@click="show = 'all'" 
+					:class="{'active-btn': show == 'all'}">
+					All Notes
+				</button>
+				<!-- only show favorite notes -->
+				<button 
+					@click="show = 'favorite'" 
+					:class="{'active-btn': show == 'favorite'}">
+					Favorites
+				</button>
 			</div>
 		</div>
+		<!-- note list -->
 		<div class="list-container">
-			<a href="#" v-for="note in filterNotes" 
+			<a href="#" 
+				v-for="note in filterNotes" 
 				:class="{'active-note': activeNote == note}"
 				@click="updateActiveNote(note)">
 				{{ note.text.trim().substring(0, 30) }}
@@ -19,6 +31,7 @@
 
 <script>
 	import { updateActiveNote } from '../vuex/actions'
+	
 	export default {
 		data () {
 			return {

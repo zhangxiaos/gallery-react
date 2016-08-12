@@ -1,6 +1,9 @@
 <template>
 	<div id="edit-note">
-		<textarea :value="activeNoteText" @input="editNote"></textarea>
+		<textarea 
+			:value="activeNoteText" 
+			@input="editNote">
+		</textarea>
 	</div>
 </template>
 

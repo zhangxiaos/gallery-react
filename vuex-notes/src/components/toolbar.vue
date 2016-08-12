@@ -1,26 +1,35 @@
 <template>
   <div id="toolbar">
-    <button title="添加笔记" @click="addNote">+</button>
-    <button title="收藏笔记" @click="toggleFavorite">💗</button>
-    <button title="删除笔记" @click="deleteNote">×</button>
+    <button title="添加笔记" 
+      @click="addNote">
+      +
+    </button>
+    <button title="收藏笔记" 
+      @click="toggleFavorite">
+      💗
+    </button>
+    <button title="删除笔记" 
+      @click="deleteNote">
+      ×
+    </button>
   </div>
 </template>
 
 <script>
-import { addNote, deleteNote, toggleFavorite } from '../vuex/actions'
+  import { addNote, deleteNote, toggleFavorite } from '../vuex/actions'
 
-export default {
-  vuex: {
-    getters: {
-      activeNote: state => state.activeNote
-    },
-    actions: {
-      addNote,
-      deleteNote,
-      toggleFavorite
+  export default {
+    vuex: {
+      getters: {
+        activeNote: state => state.activeNote
+      },
+      actions: {
+        addNote,
+        deleteNote,
+        toggleFavorite
+      }
     }
   }
-}
 </script>
 
 <style>
