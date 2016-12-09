@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Display></Display>
-    <Increment></Increment>
+    <!-- <Display></Display> -->
+    <!-- <Increment></Increment> -->
     <Books></Books>
   </div>
 </template>

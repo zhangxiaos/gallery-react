@@ -87,7 +87,8 @@ export default {
 </script>
 
 <style>
-	.book-container {margin-top: 30px; margin-left: 200px;}
+	.book-container {margin: 30px 0 30px 200px;}
+	.table>tbody>tr>td {vertical-align: middle;}
 	th,tr,td {text-align: center;}
 	tr th {cursor: pointer;}
 </style>
