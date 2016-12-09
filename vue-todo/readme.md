@@ -5,5 +5,6 @@
 2. 添加、删除功能
 3. 过滤查询功能
 4. 动态计算图书总价
+
 #### 效果图：
 ￼ ![image](https://github.com/zhangxiaos/vue-project/blob/master/vue-todo/todo.png)
