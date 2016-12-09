@@ -8,7 +8,8 @@
 5. 全部笔记和收藏笔记切换
 
 #### 效果图：
-￼ ![image](https://github.com/zhangxiaos/vue-project/blob/master/vue-todo/todo.png)
+￼ ![image](https://github.com/zhangxiaos/vue-project/blob/master/vuex-notes/note1.png)
+￼ ![image](https://github.com/zhangxiaos/vue-project/blob/master/vuex-notes/note2.png)
 
 #### install dependencies
 npm install
